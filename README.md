@@ -25,7 +25,9 @@ To achieve that, each Dashoard component uses the custom `usePerfStats` hook whi
 1. Wrap the components you want to measure with `Profiler` component. This component takes an `id` prop
 2. Implement one or more `Dashboard` component that use the `usePerfStats` hook. This hook exposes all the collected performance readings and re-renders the component when they change.
 
-The only caveat is to make sure the `usePerfStats` hook is never used inside a `<Profiler>` tree as this will cause an infinite re-render loop.
+## Caveats
+`Profiler` should never be used in side a dashbord (a component that uses the `usePerfStats` hook) and a dashboard should never be inside a `Profiler`.  
+Breaking this rule will cause an infinite re-render loop.
 
 Included in this repo is a reference implementation of a dashboard component.
 
