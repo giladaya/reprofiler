@@ -1,0 +1,23 @@
+._reprofiler-dashboard {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  text-align: initial;
+  background: #ddeaff;
+}
+
+._reprofiler-dashboard h1 {
+  margin: 0 0 1em 0;
+  font-size: 1em;
+  font-weight: normal;
+  border-bottom: 1px solid;
+}
+
+._reprofiler-dashboard table {
+  font-size: 0.8em;
+}
+
+._reprofiler-dashboard th {
+  text-align: left;
+}
