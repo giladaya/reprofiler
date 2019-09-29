@@ -4,7 +4,7 @@ import NumberSlider from "./NumberSlider";
 import ColorPicker from "./ColorPicker";
 import Fibonacci from "./Fibonacci";
 import { Profiler } from "../Reprofiler";
-import { DashboardT as Dashboard } from "../Reprofiler/Dashboard";
+import Dashboard from "../Reprofiler/DashboardTable";
 
 const COLORS = {
   Red: "#ff0000",
