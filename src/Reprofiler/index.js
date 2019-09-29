@@ -89,3 +89,12 @@ export const usePerfStats = () => {
 
   return globalStats;
 };
+
+// a render-prop version of the custom hook
+// for use in class compnents
+export const PerfStats = props => {
+  const { children } = props;
+  const stats = usePerfStats();
+
+  return children(stats);
+};
