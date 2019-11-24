@@ -3,17 +3,10 @@ import "./App.css";
 import NumberSlider from "./NumberSlider";
 import ColorPicker from "./ColorPicker";
 import Fibonacci from "./Fibonacci";
+import { COLORS } from "./config";
 import { Profiler } from "../Reprofiler";
 import Dashboard from "../Reprofiler/DashboardTable";
 import { usePerfStats } from "../Reprofiler";
-
-const COLORS = {
-  Red: "#ff0000",
-  Green: "#00cc00",
-  Blue: "#0000ff",
-  Gray: "#aaaaaa",
-  Black: "#000000"
-};
 
 function TotalDashboard() {
   const stats = usePerfStats();
